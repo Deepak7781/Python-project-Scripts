@@ -1,9 +1,9 @@
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 
 # array of PDFs which need to merge 
 pdfs = ['repo.pdf', 'python.pdf']
 
-merger = PdfFileMerger(strict=False)
+merger = PdfMerger(strict=False)
 
 for pdf in pdfs:
     merger.append(pdf)
